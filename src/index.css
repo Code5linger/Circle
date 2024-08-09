@@ -191,9 +191,12 @@
 
 :root {
   --font-family-roboto: 'Roboto', sans-serif;
+  --font-family-poppins: 'Poppins', sans-serif;
   --text-size-large: 3.75rem;
   --text-size-medium: 1.25rem;
   --text-size-small: 1rem;
+  --text-size-extra-small: 0.813rem;
+  --text-size-2x-extra-small: 0.699rem;
 
   --text-weight-medium: 500;
 
@@ -202,6 +205,8 @@
   --text-color-currentPage: #072ac8;
   --text-color-fadedWhite: #6b708d;
   --text-color-white: #fff;
+  --text-color-back: #9b9b9a;
+  --text-color-float: #292e47;
 }
 
 body {
@@ -253,6 +258,10 @@ header {
   padding: 0.938rem 2.063rem;
 }
 
+.hero {
+  position: relative;
+}
+
 .hero-text {
   max-width: 30rem;
 }
@@ -266,9 +275,9 @@ header {
 }
 
 .hero-text h3 {
-  max-width: 21.75rem;
+  max-width: 27.2rem;
   line-height: 1.5;
-  font-size: var(--text-medium-size);
+  font-size: 20px;
   font-weight: 400;
   color: var(--text-color-fadedWhite);
 }
@@ -276,4 +285,31 @@ header {
 .hero-cta {
   display: flex;
   gap: 1rem;
+}
+
+.floatItem-A {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+
+  background: var(--text-color-white);
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem 0 0 0;
+}
+
+.floatItem-A * {
+  margin-bottom: 0.35rem;
+}
+
+.floatItem-text {
+  color: var(--text-color-float);
+  font-family: var(--font-family-poppins);
+  font-size: 0.3813rem;
+  padding-left: 1.125rem;
+}
+
+.floatItem-text p {
+  color: var(--text-color-back);
+  font-size: var(--text-size-2x-extra-small);
 }
